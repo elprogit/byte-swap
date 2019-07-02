@@ -85,7 +85,6 @@ var
            inc(i,2);
         until i=fsize;
 
-
         AssignFile(afile, edit2.Text);
         Rewrite(afile);
         i:=0;
@@ -95,14 +94,7 @@ var
         until i=fsize;
         CloseFile(afile);
 
-        ShowMessage('Swap conversion OK!');
-
-
-
-
-
-
-
+        ShowMessage('Swap Hi/Lo conversion OK!');
 end;
 
 end.
