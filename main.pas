@@ -67,7 +67,11 @@ var
         sw1,sw2,swt: byte;
         fsize: longint;
  begin
-        if (edit1.Text='') or (edit2.Text='') then Exit;
+        if (edit1.Text='') or (edit2.Text='') then begin
+            ShowMessage('Fields can not be empty!');
+            Exit;
+        end;
+
 
         AssignFile(afile, edit1.Text);
         Reset(afile);
