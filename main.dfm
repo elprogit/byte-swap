@@ -1,9 +1,9 @@
 object Form1: TForm1
   Left = 282
   Top = 157
-  Width = 625
-  Height = 198
   Caption = 'File Hi Lo swaper'
+  ClientHeight = 160
+  ClientWidth = 609
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -76,6 +76,7 @@ object Form1: TForm1
     OnClick = Button3Click
   end
   object OpenDialog1: TOpenDialog
-    Left = 560
+    Left = 392
+    Top = 112
   end
 end

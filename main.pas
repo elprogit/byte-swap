@@ -67,6 +67,8 @@ var
         sw1,sw2,swt: byte;
         fsize: longint;
  begin
+        if (edit1.Text='') or (edit2.Text='') then Exit;
+
         AssignFile(afile, edit1.Text);
         Reset(afile);
         fsize:=FileSize(afile);
